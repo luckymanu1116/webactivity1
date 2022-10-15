@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form asp-action="/index" method="post">
+    <sp class="form-group">
+        <input type="number" name="val1" id="num1" />
+    </sp>
+    <span class="form-group">
+        <select name="calculation" id="calculation">
+            <option value="addition" selected>Addition</option>
+            <option value="subtraction">Substraction</option>
+            <option value="multipication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+    </span>
+    <span class="form-group">
+        <input type="number" name="val2" id="num2" />
+    </span>
+    <input type="submit" class="btn btn-outline-dark" value="Calculate" id="calculate" />
+</form>
+
+@if (Model.ResultValue)
+{
+    <div class="display-4">
+        Output is <output id="output">@Model.Output</output>
+    </div>
+}

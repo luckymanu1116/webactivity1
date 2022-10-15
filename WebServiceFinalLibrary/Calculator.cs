@@ -3,7 +3,7 @@ namespace WebServiceFinalLibrary
 {
     public class Calculator
     {
-        
+        //added calculation methods
             static public double addition(double value1, double value2)
             {
                 return value1 + value2;

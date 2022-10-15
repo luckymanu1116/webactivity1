@@ -10,6 +10,7 @@ namespace WebServiceAPITest
 
         public class SimpleCalculatorTest
         {
+            //test methods
             [TestMethod]
             [DataRow(2, 4)]
             [DataRow(8, 1)]
